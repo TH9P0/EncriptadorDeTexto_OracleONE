@@ -1,0 +1,28 @@
+.logo{
+    padding: 20px 0 0 20px;
+}
+
+main{
+    padding: 40px;
+}
+
+button{
+    width: 328px;
+    height: 67px;
+    border-radius: 35px;
+    border-color: red;
+}
+
+textarea{
+    border-color: white;
+    resize: none;
+    background-color: white;
+}
+
+.TextoEncriptado{
+    float: right;
+}
+
+.copiar{
+    visibility: hidden;
+}
