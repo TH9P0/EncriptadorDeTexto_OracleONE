@@ -13,16 +13,8 @@ button{
     border-color: red;
 }
 
-textarea{
+#ingresoUsuario{
     border-color: white;
     resize: none;
     background-color: white;
-}
-
-.TextoEncriptado{
-    float: right;
-}
-
-.copiar{
-    visibility: hidden;
 }

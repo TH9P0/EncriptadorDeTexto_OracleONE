@@ -18,13 +18,14 @@
 
         <main>
             <section class="paraEncriptar">
-                <textarea name="ingresoUsuario" id="textarea" cols="100" rows="35" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" ></textarea>
+                <textarea name="ingresoUsuario" id="ingresoUsuario" cols="100" rows="35" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" ></textarea>
                 <p>Solo letras minúsculas y sin acentos</p>
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button onclick="encriptar();" class="encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
             </section>
             <section class="TextoEncriptado">
-                <button class="copiar">Copiar</button>
+                <textarea name="textoProcesado" id="textoProcesado" cols="50" rows="25" readonly></textarea>
+                <button onclick="copiar();" class="copiar" disabled>Copiar</button>
             </section>
 
         </main>
@@ -33,5 +34,7 @@
             <p>Pagina realizada por Luis Angel Vázquez García (A.K.A. Thopo)</p>
         </footer>
     </body>
+
+    <script src="app.js"></script>
 
 </html>
