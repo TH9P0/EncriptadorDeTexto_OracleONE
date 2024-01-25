@@ -1,11 +1,13 @@
 /*HTML General*/
 body{
-    background-color: #C2FEF5;
+    background-color: #00A896;
 }
 
 /*Header*/
 header{
-    background-color: #92EDCD;
+    width: 100%;
+    background-color: #431F87;
+    display: flex;
 }
 
 .imagenCandado{
@@ -18,9 +20,9 @@ header button{
     height: 40px;
     border-radius: 18px;
     border: none;
-    background-color: #5600B2;
+    background-color: #00A896;
     color: white;
-    padding: 10px 0 10px 0;
+    box-shadow: 5px 5px 5px black;
     transition: 1s all;
 }
 
@@ -32,7 +34,7 @@ header button:hover{
 /*main*/
 
 main{
-    width: 940px;
+    width: 90%;
     padding: 40px;
     display: flex;
     margin: 0 auto;
@@ -58,3 +60,12 @@ main button{
 }
 
 /* footer */
+footer{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    background-color: #431F87;
+    padding: 1.5rem;
+    color: white;
+}
