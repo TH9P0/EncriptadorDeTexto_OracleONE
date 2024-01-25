@@ -18,14 +18,14 @@
 
         <main>
             <section class="paraEncriptar">
-                <textarea name="ingresoUsuario" id="ingresoUsuario" cols="100" rows="35" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" ></textarea>
+                <textarea name="ingresoUsuario" id="ingresoUsuario" cols="100" rows="35" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" ></textarea>
                 <p>Solo letras minúsculas y sin acentos</p>
                 <button onclick="encriptar();" class="encriptar">Encriptar</button>
                 <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
             </section>
             <section class="TextoEncriptado">
                 <textarea name="textoProcesado" id="textoProcesado" cols="50" rows="25" readonly></textarea>
-                <button onclick="copiar();" class="copiar" disabled>Copiar</button>
+                <button onclick="copiar();" id="copiar" disabled>Copiar</button>
             </section>
 
         </main>
