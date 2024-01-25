@@ -1,20 +1,60 @@
-.logo{
-    padding: 20px 0 0 20px;
+/*HTML General*/
+body{
+    background-color: #C2FEF5;
 }
+
+/*Header*/
+header{
+    background-color: #92EDCD;
+}
+
+.imagenCandado{
+    width: 80px;
+    padding: 0.5em;
+}
+
+header button{
+    width: 110px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    background-color: #5600B2;
+    color: white;
+    padding: 10px 0 10px 0;
+    transition: 1s all;
+}
+
+header button:hover{
+    background-color: black;
+    transform: scale(1.2);
+}
+
+/*main*/
 
 main{
+    width: 940px;
     padding: 40px;
+    display: flex;
+    margin: 0 auto;
 }
 
-button{
+main button{
     width: 328px;
     height: 67px;
     border-radius: 35px;
     border-color: red;
 }
 
-#ingresoUsuario{
+.ingresoUsuario{
     border-color: white;
     resize: none;
     background-color: white;
+    padding: 1em;
 }
+
+.TextoEncriptado{
+    padding: 1em;
+    display: block;
+}
+
+/* footer */

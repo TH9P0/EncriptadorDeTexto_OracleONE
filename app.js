@@ -64,7 +64,7 @@ function desencriptar(){
 }
 
 function copiar(){
-    let copyText = document.querySelector("#textoProcesado");
+    let copyText = document.querySelector("textoProcesado");
     copyText.select();
     document.execCommand("copy");
 }
