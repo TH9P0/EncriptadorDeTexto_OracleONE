@@ -1,65 +1,73 @@
 /*HTML General*/
 body{
-    background-color: #00A896;
+    font-family: 'Quicksand', sans-serif;
 }
+
 
 /*Header*/
 header{
-    width: 100%;
     background-color: #431F87;
-    display: flex;
 }
 
 .imagenCandado{
-    width: 80px;
+    padding: 1em;
+    width: 75px;
+}
+
+/*Body*/
+main{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    font-size: 25px;
+}
+
+section{
+    padding: 2em;
+}
+
+div{
     padding: 0.5em;
 }
 
-header button{
-    width: 110px;
-    height: 40px;
-    border-radius: 18px;
-    border: none;
-    background-color: #00A896;
+textarea{
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.encriptar, .desencriptar{
+    margin: 0 0.8em;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
     color: white;
-    box-shadow: 5px 5px 5px black;
+    background: linear-gradient(30deg,#431F87 80%,white 7.5%,#431F87);
+    border: none;
     transition: 1s all;
 }
 
-header button:hover{
-    background-color: black;
+.copiar{
+    margin: 0 0.8em;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(30deg,#431F87 80%,white 7.5%,#431F87);
+    border: none;
+    transition: 1s all;
+}
+
+button:disabled{
+    opacity: 25%;
+}
+
+button:hover{
+    background: linear-gradient(30deg,#431F87 90%,white 7.5%,#431F87);
     transform: scale(1.2);
 }
 
-/*main*/
-
-main{
-    width: 90%;
-    padding: 40px;
-    display: flex;
-    margin: 0 auto;
-}
-
-main button{
-    width: 328px;
-    height: 67px;
-    border-radius: 35px;
-    border-color: red;
-}
-
-.ingresoUsuario{
-    border-color: white;
-    resize: none;
-    background-color: white;
-    padding: 1em;
-}
-
-.TextoEncriptado{
-    padding: 1em;
-    display: block;
-}
-
-/* footer */
+/*Footer*/
 footer{
     width: 100%;
     position: fixed;

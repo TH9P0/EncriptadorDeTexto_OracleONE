@@ -7,30 +7,39 @@
         <meta name="viewport" content="width-device-width">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <img src="Imagen/candado.png" class="imagenCandado" alt="Imagen de un candado">
-            <button class="darkMode" >Dark Mode</button>
         </header>
 
         <main>
             <section class="paraEncriptar">
-                <textarea name="ingresoUsuario" class="ingresoUsuario" cols="50" rows="30" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" ></textarea>
-                <p>&#9888; Solo letras minúsculas y sin acentos</p>
-                <button onclick="encriptar();" class="encriptar">Encriptar</button>
-                <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
+                <div class="TAUsuario">
+                    <textarea name="ingresoUsuario" class="ingresoUsuario" id="ingresoUsuario" cols="50" rows="15" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 13)" ></textarea>
+                    <p>&#9888; Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botonesUsuario">
+                    <button onclick="encriptar();" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
+                </div>
             </section>
             <section class="TextoEncriptado">
-                <textarea name="textoProcesado" id="textoProcesado" cols="50" rows="30" readonly></textarea>
-                <button onclick="copiar();" class="copiar" disabled>Copiar</button>
+                <div class="TAEncriptado">
+                    <textarea name="textoProcesado" id="textoProcesado" cols="50" rows="15" readonly placeholder="Aqui podras ver el texto una vez que se haya des/encriptado"></textarea>
+                </div>
+                <div class="botonCopiar">
+                    <button onclick="copiar();" class="copiar" id="copiar" disabled>Copiar</button>
+                </div>
             </section>
 
         </main>
 
         <footer>
             <p>Pagina realizada por Luis Angel Vázquez García (A.K.A. Thopo)</p>
+            <p>"Nadie podria virir recordando todo el tiempo. El olvido es tambien una cura"</p>
         </footer>
     </body>
 
