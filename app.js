@@ -1,7 +1,6 @@
-let textoProcesado = document.getElementById('textoProcesado');
-
 function encriptar(){
     let fraseUsuario = document.getElementById('ingresoUsuario').value;
+    let textoProcesado = document.getElementById('textoProcesado');
     let fraseEncriptada = '';
 
     for(i=0; i<fraseUsuario.length; i++){
@@ -26,52 +25,45 @@ function encriptar(){
     }
 
     document.getElementById('ingresoUsuario').value = "";
-    textoProcesado.innerHTML = fraseEncriptada;
     document.getElementById('copiar').removeAttribute('disabled');
+    textoProcesado.innerHTML = fraseEncriptada;
 }
 
 function desencriptar(){
-    let fraseUsuario = document.getElementById('ingresoUsuario').value;
-    let fraseEncriptada = '';
-    console.log(fraseUsuario);
+    let fraseEncriptada = document.getElementById('ingresoUsuario').value;
+    let textoProcesado = document.getElementById('textoProcesado');
+    
+    do{
+        fraseEncriptada = fraseEncriptada.replace('ai','a');
+    }while(fraseEncriptada.includes('ai'));
 
-    for(i=0; i<fraseUsuario.length; i++){
-        if(fraseUsuario.includes('ai')){
-            fraseEncriptada = fraseEncriptada + fraseUsuario.charAt(i);
-            i++;
-        }
-        else if(fraseUsuario.includes('enter')){
-            fraseEncriptada = fraseEncriptada + fraseUsuario.charAt(i);
-            i = i + 4;
-        }
-        else if(fraseUsuario.includes('imes')){
-            fraseEncriptada = fraseEncriptada + fraseUsuario.charAt(i);
-            i = i + 3
-        }
-        else if(fraseUsuario.includes('ober')){
-            fraseEncriptada = fraseEncriptada + fraseUsuario.charAt(i);
-            i = i + 3;
-        }
-        else if(fraseUsuario.includes('ufat')){
-            fraseEncriptada = fraseEncriptada + fraseUsuario.charAt(i);
-            i = i + 3
-        }
-        else{
-            fraseEncriptada = fraseEncriptada.concat(fraseUsuario.charAt(i));
-        }
-    }
+    do{
+        fraseEncriptada = fraseEncriptada.replace('enter','e');
+    }while(fraseEncriptada.includes('enter'));
+
+    do{
+        fraseEncriptada = fraseEncriptada.replace('imes','i');
+    }while(fraseEncriptada.includes('imes'));
+
+    do{
+        fraseEncriptada = fraseEncriptada.replace('ober','o');
+    }while(fraseEncriptada.includes('ober'));
+
+    do{
+        fraseEncriptada = fraseEncriptada.replace('ufat','u');
+    }while(fraseEncriptada.includes('ufat'));
 
     document.getElementById('ingresoUsuario').value = "";
-    textoProcesado.innerHTML = fraseEncriptada;
     document.getElementById('copiar').removeAttribute('disabled');
+    textoProcesado.innerHTML = fraseEncriptada;
 }
 
 function copiar(){
     let copyText = document.getElementById("textoProcesado");
     copyText.select();
     document.execCommand("copy");
-    document.getElementById('textoProcesado').value = "";
+    textoProcesado.innerHTML = '';
     document.getElementById('copiar').setAttribute('disabled',true);
+    alert('Texto copiado con exito');
+    document.querySelector("#copy").addEventListener("click", copy);
 }
-      
-document.querySelector("#copy").addEventListener("click", copy);

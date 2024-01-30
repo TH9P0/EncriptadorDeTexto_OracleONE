@@ -17,7 +17,7 @@ header{
 /*Body*/
 main{
     text-align: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     font-size: 25px;
@@ -34,6 +34,7 @@ div{
 textarea{
     font-size: 25px;
     border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .encriptar, .desencriptar{
@@ -76,4 +77,16 @@ footer{
     background-color: #431F87;
     padding: 1.5rem;
     color: white;
+}
+
+/*Responsive*/
+@media screen and (max-width:740px){
+    p{
+        text-align: center;
+    }
+    
+    main{
+        width: auto;
+        display: inline-flex;
+    }
 }
