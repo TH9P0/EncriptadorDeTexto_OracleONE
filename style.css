@@ -40,6 +40,9 @@ textarea{
     border-radius: 15px;
     font-family: 'Quicksand', sans-serif;
     border: none;
+    resize: none;
+    width: 100%;
+    height: 400px;
 }
 
 .encriptar, .desencriptar{

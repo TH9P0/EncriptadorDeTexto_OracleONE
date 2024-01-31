@@ -18,7 +18,7 @@
         <main>
             <section class="paraEncriptar">
                 <div class="TAUsuario">
-                    <textarea name="ingresoUsuario" class="ingresoUsuario" id="ingresoUsuario" cols="50" rows="15" onkeyup="activarBotones();" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 13)" ></textarea>
+                    <textarea name="ingresoUsuario" class="ingresoUsuario" id="ingresoUsuario" onkeyup="activarBotones();" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" autofocus onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 13)" ></textarea>
                     <p>&#9888; Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botonesUsuario">
@@ -28,7 +28,7 @@
             </section>
             <section class="TextoEncriptado">
                 <div class="TAEncriptado">
-                    <textarea name="textoProcesado" id="textoProcesado" cols="50" rows="15" readonly placeholder="Aqui podras ver el texto una vez que se haya des/encriptado"></textarea>
+                    <textarea name="textoProcesado" id="textoProcesado" readonly placeholder="Aqui podras ver el texto una vez que se haya des/encriptado"></textarea>
                 </div>
                 <div class="botonCopiar">
                     <button onclick="copiar();" class="copiar" id="copiar" disabled>Copiar</button>
