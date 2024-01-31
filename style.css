@@ -97,6 +97,10 @@ footer{
         width: 100%;
     } 
 
+    main{
+        display: inline;
+    }
+
     textarea{
         size: 50%;
     }
