@@ -18,12 +18,12 @@
         <main>
             <section class="paraEncriptar">
                 <div class="TAUsuario">
-                    <textarea name="ingresoUsuario" class="ingresoUsuario" id="ingresoUsuario" cols="50" rows="15" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 13)" ></textarea>
+                    <textarea name="ingresoUsuario" class="ingresoUsuario" id="ingresoUsuario" cols="50" rows="15" onkeyup="activarBotones();" placeholder="Ingrese aqui el texto que desea encriptar o desencriptar" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 13)" ></textarea>
                     <p>&#9888; Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botonesUsuario">
-                    <button onclick="encriptar();" class="encriptar">Encriptar</button>
-                    <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
+                    <button onclick="encriptar();" class="encriptar" id="encriptar" disabled>Encriptar</button>
+                    <button onclick="desencriptar();" class="desencriptar" id="desencriptar" disabled>Desencriptar</button>
                 </div>
             </section>
             <section class="TextoEncriptado">

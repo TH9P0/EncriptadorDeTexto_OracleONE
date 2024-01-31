@@ -27,6 +27,8 @@ function encriptar(){
     document.getElementById('ingresoUsuario').value = "";
     document.getElementById('copiar').removeAttribute('disabled');
     textoProcesado.innerHTML = fraseEncriptada;
+    document.getElementById('encriptar').setAttribute('disabled',true);
+    document.getElementById('desencriptar').setAttribute('disabled',true);
 }
 
 function desencriptar(){
@@ -56,6 +58,8 @@ function desencriptar(){
     document.getElementById('ingresoUsuario').value = "";
     document.getElementById('copiar').removeAttribute('disabled');
     textoProcesado.innerHTML = fraseEncriptada;
+    document.getElementById('encriptar').setAttribute('disabled',true);
+    document.getElementById('desencriptar').setAttribute('disabled',true);
 }
 
 function copiar(){
@@ -66,4 +70,16 @@ function copiar(){
     document.getElementById('copiar').setAttribute('disabled',true);
     alert('Texto copiado con exito');
     document.querySelector("#copy").addEventListener("click", copy);
+}
+
+function activarBotones(){
+    let campo = document.getElementById('ingresoUsuario').value;
+    if(campo == ""){
+        document.getElementById('encriptar').setAttribute('disabled',true);
+        document.getElementById('desencriptar').setAttribute('disabled',true);
+    }
+    else{
+        document.getElementById('encriptar').removeAttribute('disabled');
+        document.getElementById('desencriptar').removeAttribute('disabled');
+    }
 }
