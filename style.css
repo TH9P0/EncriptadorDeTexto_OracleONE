@@ -15,6 +15,10 @@ header{
 }
 
 /*Body*/
+body{
+    background-color: aquamarine;
+}
+
 main{
     text-align: center;
     width: 80%;
@@ -35,6 +39,7 @@ textarea{
     font-size: 25px;
     border-radius: 15px;
     font-family: 'Quicksand', sans-serif;
+    border: none;
 }
 
 .encriptar, .desencriptar{
@@ -81,12 +86,15 @@ footer{
 
 /*Responsive*/
 @media screen and (max-width:480px){
-    p{
-        text-align: center;
+    body{
+        font-size: 15px;
     }
-    
-    main{
-        width: auto;
-        display: inline-flex;
+
+    header{
+        width: 100%;
+    } 
+
+    textarea{
+        size: 50%;
     }
 }
