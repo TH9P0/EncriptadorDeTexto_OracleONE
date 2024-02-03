@@ -28,7 +28,8 @@ main{
 }
 
 section{
-    padding: 2em;
+    width: 50%;
+    padding: 1em;
 }
 
 div{
@@ -42,7 +43,7 @@ textarea{
     border: none;
     resize: none;
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 
 .encriptar, .desencriptar{
@@ -78,10 +79,7 @@ button:hover{
 
 /*Footer*/
 footer{
-    width: 100%;
-    position: fixed;
     text-align: center;
-    bottom: 0px;
     background-color: #431F87;
     padding: 1.5rem;
     color: white;
@@ -90,18 +88,44 @@ footer{
 /*Responsive*/
 @media screen and (max-width:480px){
     body{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     header{
         width: 100%;
+        height: 70px;
     } 
+
+    .imagenCandado{
+        width: 50px;
+    }
 
     main{
         display: inline;
     }
 
+    section{
+        font-size: 13px;
+        width: 90%;
+        padding: 1em;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        width: 90px;
+        height: 30px;
+
+    }
+
     textarea{
-        size: 50%;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .ingresoUsuario{
+        height: 240px;
+    }
+
+    #textoProcesado{
+        height: 100px;
     }
 }
