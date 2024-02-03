@@ -80,6 +80,9 @@ button:hover{
 /*Footer*/
 footer{
     text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     background-color: #431F87;
     padding: 1.5rem;
     color: white;
@@ -93,7 +96,7 @@ footer{
 
     header{
         width: 100%;
-        height: 70px;
+        height: 5%;
     } 
 
     .imagenCandado{
@@ -107,6 +110,7 @@ footer{
     section{
         font-size: 13px;
         width: 90%;
+        height: 100%;
         padding: 1em;
     }
 
@@ -127,5 +131,10 @@ footer{
 
     #textoProcesado{
         height: 100px;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
     }
 }
