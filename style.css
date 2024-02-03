@@ -96,11 +96,10 @@ footer{
 
     header{
         width: 100%;
-        height: 5%;
     } 
 
     .imagenCandado{
-        width: 50px;
+        width: 15%;
     }
 
     main{
@@ -110,19 +109,26 @@ footer{
     section{
         font-size: 13px;
         width: 90%;
-        height: 100%;
         padding: 1em;
+    }
+
+    .paraEncriptar{
+        min-height: 75%;
+    }
+
+    .TextoEncriptado{
+        min-height: 25%;
     }
 
     .encriptar, .desencriptar, .copiar{
         width: 90px;
         height: 30px;
-
     }
 
     textarea{
         font-size: 15px;
         width: 100%;
+        min-height: 100%;
     }
 
     .ingresoUsuario{
